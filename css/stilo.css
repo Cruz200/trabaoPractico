@@ -1,0 +1,132 @@
+/* Estilos para el cuerpo de la página */
+body {
+    border: solid rgb(10, 10, 10); /* Borde sólido de color */
+    min-height: 50px; /* Altura mínima */
+    padding: 2%; /* Espaciado interno */
+    margin: auto; /* Margen automático */
+    background-color: rgb(209, 201, 201); /* Color de fondo */
+}
+
+/* Estilos para las secciones */
+section {
+    border: solid; /* Borde sólido */
+    height: 200px; /* Altura */
+    padding: 5%; /* Espaciado interno */
+    margin: 5px; /* Margen */
+    min-height: 50px; /* Altura mínima */
+    width: 50%; /* Ancho */
+}
+
+/* Estilos para la barra de navegación */
+nav {
+    flex-direction: column; /* Dirección de los elementos flexibles */
+    border: solid; /* Borde sólido */
+    min-height: 10px; /* Altura mínima */
+    min-width: 20px; /* Ancho mínimo */
+    max-width: auto; /* Ancho máximo */
+}
+
+/* Estilos para el contenido principal */
+main {
+    border: solid; /* Borde sólido */
+    width: 55rem; /* Ancho fijo */
+    margin: 0.2rem; /* Margen */
+    height: 50rem; /* Altura */
+    min-height: 50px; /* Altura mínima */
+    display: flexbox; /* Mostrar como flexbox */
+}
+
+/* Estilos para la barra de navegación */
+.barra {
+    background-color: rgb(230, 242, 242); /* Color de fondo */
+    border: solid; /* Borde sólido */
+    margin: 10px; /* Margen */
+}
+
+/* Estilos para un carrusel */
+.carrusel {
+    border: solid; /* Borde sólido */
+    height: 5px; /* Altura */
+    width: auto; /* Ancho automático */
+}
+
+/* Estilos para las secciones del contenido principal */
+.medio, .bajo {
+    width: auto; /* Ancho automático */
+    height: 40%; /* Altura del 40% */
+    padding: 1%; /* Espaciado interno */
+    margin: 30px; /* Margen */
+}
+
+/* Estilos para los elementos dentro de la barra de navegación */
+.verde {
+    border: solid; /* Borde sólido */
+    margin: 1%; /* Margen */
+}
+
+/* Estilos para los elementos medio1, medio2 y medio3 */
+.medio1, .medio2, .medio3 {
+    display: inline-flex; /* Mostrar como inline-flex */
+    background-color: rgb(100, 100, 120); /* Color de fondo */
+    width: 20%; /* Ancho del 20% */
+    border: solid; /* Borde sólido */
+    margin: 1px; /* Margen */
+}
+
+/* Estilos para el elemento medio4 */
+.medio4 {
+    display: inline-flex; /* Mostrar como inline-flex */
+    justify-content: center; /* Justificar al centro */
+    width: 36%; /* Ancho del 36% */
+    height: 2%; /* Altura del 2% */
+    padding: 1px; /* Espaciado interno */
+    max-width: 750px; /* Ancho máximo */
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 1.5); /* Sombra */
+    margin: 1px; /* Margen */
+    border-radius: 100%; /* Radio de borde */
+    background-color: rgba(86, 89, 108, 0.748); /* Color de fondo con transparencia */
+}
+
+/* Estilos para el texto dentro del elemento medio4 */
+.medio4 h2 {
+    text-shadow: 0 6px 6px rgba(0, 0, 0, 1.5); /* Sombra de texto */
+    font-size: 2rem; /* Tamaño de fuente */
+    color: rgb(159, 159, 135); /* Color de texto */
+    font-family: 'Times New Roman', Times, serif; /* Fuente */
+}
+
+/* Estilos para el contenido en la parte inferior */
+.bajo {
+    color: #090909; /* Color de texto */
+    width: auto; /* Ancho automático */
+    height: 40%; /* Altura del 40% */
+    margin: 30px; /* Margen */
+}
+
+/* Estilos para el contenedor principal */
+.container {
+    display: flex; /* Mostrar como flex */
+    justify-content: center; /* Justificar al centro */
+    width: 100%; /* Ancho del 100% */
+    height: auto; /* Altura automática */
+    color: rgb(2, 2, 2); /* Color de texto */
+}
+
+/* Estilos para el segundo dominio */
+.segundomain {
+    display: inline-flex; /* Mostrar como inline-flex */
+    border: solid; /* Borde sólido */
+    color: rgb(5, 5, 5); /* Color de texto */
+    height: 43rem; /* Altura */
+    width: 55rem; /* Ancho */
+    margin-left: 5%; /* Margen izquierdo */
+}
+
+/* Estilos para el formulario */
+.form {
+    text-align: center; /* Alinear al centro */
+    align-items: center; /* Alinear elementos */
+    width: 80%; /* Ancho del 80% */
+    margin-left: 5%; /* Margen izquierdo */
+    height: auto; /* Altura automática */
+}
