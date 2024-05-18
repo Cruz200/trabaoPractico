@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href=".//css/stilo.css">
-    <title>pruebat</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="./js/sript.js"></script>
+    <title>Trabajo Practico</title>
 </head>
 <body>
     
@@ -12,23 +14,29 @@
         <!-- la idea acá es que cada uno de estos div nos dirija a las otras plantillas -->
         <!-- el class medio4 ""nombre de la pagina" puede funcionar donde mostrar el nombre de nuestra pagina o un icono -->       
         <div class="verde">
-            <div class="medio1"><a href="vuelos.html">Vuelos</a></div>
-            <div class="medio2"><a href="alojamientos.html">Alojamientos</a></div>
-            <div class="medio3"><a href="ofertas.html">Ofertas</a></div>
-            <div class="medio4"><h2>Nombre de la Página</h2></div>
+            <div class="medio1"><a href="vuelos.html"><h3>Vuelos</h3></a></div>
+            <div class="medio2"><a href="alojamientos.html"><h3>Alojamientos</h3></a></div>
+            <div class="medio3"><a href="ofertas.html"><h3>Ofertas</h3></a></div>
+            <div class="medio4"><h2><i class="fas fa-plane"></i>TurismoViaje</h2></div>
+            
         </div>              
-        <!-- Despues quitaremos los border solid y podemos dejarle solo sombras a esta seccion-->
-        <div>
-            <section class="carrusel">
-                <!-- Un carrusel con imágenes de destinos -->
-            </section>
-        </div>
-    </nav>
-    
+        <!-- Despues quitaremos los border solid y podemos dejarle solo sombras a esta seccion-->        
+        <section class="carrusel">
+            <!-- Un carrusel con imágenes de destinos -->
+            <div class="primerCarrusel">
+                <img src="./imagenes/avion.jpg" alt="avion" >
+                <img src="./imagenes/TILCARA-PORTADA-3.jpg" alt="">
+                <img src="./imagenes/coliseo-roma_2924b6ae_1280x720.jpg"alt="" >               
+            </div>
+            <div class="carrusel-buttons">             
+                <button class="carrusel-button" onclick="prevSlide()">❮</button>
+                <button class="carrusel-button" onclick="nextSlide()">❯</button>
+            </div>
+        </section>     
+    </nav>   
     <div class="container">
-
     <!-- aca poderos mostrar algunos ejemplos de promocion con experiencia e imgenes-->
-        <main>
+        <main class="mainMedio">
             <section class="medio">
                 <div class="div1"></div>
                 <div class="div2"></div>
@@ -49,14 +57,14 @@
             
     
         </main>
-        <section class="segundomain">
+        <aside class="segundomain">
             <!-- una seccion vertical  para colocar otro carrusel o imagenes -->
-            
-                
+            <div class="image-container">
+                <img src="./imagenes/Rio-de-Janeiro-2020.jpg" width="100%" height="100px" alt="Rio de Janeiro">
+                <div class="caption">Ofertas Rio de Janeiro</div>
+            </div>
     
-            
-    
-        </section>
+        </aside>
 
         
     </div>
