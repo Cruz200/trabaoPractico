@@ -150,7 +150,7 @@ aside{
 }
 /* Estilos para los elementos medio1, medio2 y medio3 */
 /* Estilos para los elementos de la barra */
-.medio1, .medio2, .medio3 {
+.medio1, .medio2, .medio3, .medio5 {
     display: inline-flex; /* Mostrar como inline-flex */
     background-color: rgba(132, 132, 138, 0.276); /* Color de fondo */
     width: 20%; /* Ancho del 20% */
@@ -193,6 +193,33 @@ aside{
     border-radius: 5px; /* Radio de borde */
     background-color: rgba(130, 130, 145, 0.145); /* Color de fondo */
 }
+
+.medio4contacto {
+    display: flex; /* Mostrar como inline-flex */
+    justify-content: left; /* Justificar al centro */
+    /*width: 50%; /* Ancho del 35% */
+    height: 2%; /* Altura del 2% */
+    padding: 5px; /* Espaciado interno */
+    max-width: 100%; /* Ancho máximo */
+    /*box-shadow: 0 2px 0px rgba(0, 0, 1, 40); /* Sombra */
+    margin: 1px; /* Margen */
+    border-radius: 5px; /* Radio de borde */
+    background-color: rgba(130, 130, 145, 0.145); /* Color de fondo */
+}
+
+.medio4contacto h2 {
+    text-shadow: 0 6px 6px rgba(0, 0, 0, 1.5); /* Sombra de texto */
+    font-size: 2rem; /* Tamaño de fuente */
+    color: rgba(255, 255, 246, 0.828); /* Color de texto */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.medio4contacto i {
+    margin-right: 8px; /* Espacio entre el ícono y el texto */
+    font-size: 1.5em; /* Tamaño del ícono */
+    color: rgba(49, 41, 209, 0.427); /* Color del ícono */
+}
+
 
 /* Estilos para el texto dentro del elemento medio4 */
 .medio4 h2 {
