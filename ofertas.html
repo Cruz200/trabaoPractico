@@ -6,9 +6,32 @@
     <link rel="stylesheet" href=".//css/stilo.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="icon" type="image/x-icon" href="/imagenes/airplane_14718.ico">
-    <title>Document</title>
+    <script src="./js/sript.js"></script>
+    <a href="index.html">
+        <div class="medio4contacto"><h2><i class="fas fa-plane"></i>TurismoViaje</h2></div>
+    </a>
+    <title>TurismoViaje</title>
 </head>
 <body>
-    <h1>ohla</h1>
+    <nav class="barra">
+        <div class="verde">
+            <div class="medio1"><a href="vuelos.html"><h3>Vuelos</h3></a></div>
+            <div class="medio2"><a href="alojamientos.html"><h3>Alojamientos</h3></a></div>
+            <div class="medio3"><a href="ofertas.html"><h3>Ofertas</h3></a></div>
+            <div class="medio5"><a href="contacto.html"><h3>Contacto</h3></a></div>
+        </div>
+        <section class="carrusel">
+            <!-- Un carrusel con imágenes de destinos -->
+            <div class="primerCarrusel">
+                <img src="imagenes\oferta-de-de-viaje-a-roma.jpg" alt="">
+                <img src="imagenes\rio de janeiro oferta.jpeg" alt="">
+                <img src="imagenes\francia oferta.jpeg"alt="" >               
+            </div>
+            <div class="carrusel-buttons">             
+                <button class="carrusel-button" onclick="prevSlide()">❮</button>
+                <button class="carrusel-button" onclick="nextSlide()">❯</button>
+            </div>
+        </section>
+    </nav>
 </body>
 </html>

@@ -342,3 +342,13 @@ aside{
     height: auto; /* Altura automática */
     background-color: rgba(230, 242, 242, 0.8); /* Color de fondo */
 }
+
+.oferta{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 5px;
+    bottom: 40%; /* Ajusta según sea necesario */
+    left: 20px;
+    box-sizing: border-box
+}
