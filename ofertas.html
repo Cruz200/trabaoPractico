@@ -13,6 +13,10 @@
     <title>TurismoViaje</title>
 </head>
 <body>
+    <header>
+        <h1 class="ofertas">Ofertas</h1>
+    </header>
+    
     <nav class="barra">
         <div class="verde">
             <div class="medio1"><a href="vuelos.html"><h3>Vuelos</h3></a></div>
@@ -20,6 +24,7 @@
             <div class="medio3"><a href="ofertas.html"><h3>Ofertas</h3></a></div>
             <div class="medio5"><a href="contacto.html"><h3>Contacto</h3></a></div>
         </div>
+        
         <section class="carrusel">
             <!-- Un carrusel con imágenes de destinos -->
             <div class="primerCarrusel">
@@ -33,5 +38,36 @@
             </div>
         </section>
     </nav>
+    <footer>
+        <p>&copy; 2024 ofertas. Todos los derechos reservados.</p>
+    </footer>
+    <style>
+        .ofertas {
+            background-color: rgba(89, 82, 220, 0.471);
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        .carrusel{
+            height: auto;
+            width: 50%;
+        }
+        .primerCarrusel img{
+            width: 430px; /*Ancho del 100% del contenedor*/
+            height:450px; /* Altura automática */
+            display: flex; /* Mostrar como bloque */
+            overflow: hidden;
+            flex-shrink: 0;
+            align-items: center;
+            box-shadow: 0 0 10px rgba(125, 117, 174, 0.544);
+            color: rgba(49, 41, 209, 0.427);
+            padding-inline: 10%;
+            content: none;
+            cursor: pointer;
+            border-radius: 5px;
+            object-fit: cover; 
+                             
+        }
+    </style>
 </body>
 </html>

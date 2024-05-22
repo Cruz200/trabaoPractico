@@ -25,3 +25,8 @@ function prevSlide() {
 setInterval(() => {
     nextSlide();
 }, 3000); // Cambia de imagen cada 3 segundos
+
+function formularioCambio(){
+    var x = document.getElementsByClassName("form")
+    x[0].innerHTML =("<h1>Gracias por su compra..</h1>")
+}

@@ -7,19 +7,25 @@ body {
     background-color: #d1c9c9; /* Color de fondo */
     height: 100%;
 }
+body {
+    font-family: 'Roboto', sans-serif; /* Fuente predeterminada */
+}
 
+h1, h2, h3, h4, h5, h6 {
 
+    font-family: 'Playfair Display', serif; /* Para los títulos */
+}
+p {
+    font-family: 'Lora', serif; /* Para los párrafos */
+}
 /* Estilos para las secciones */
 section {
-    border: solid; /* Borde sólido */
-    /*height: 200px; /* Altura */
     padding: 5%; /* Espaciado interno */
     margin: 5px auto; /* Margen */
     min-height: 50px; /* Altura mínima */
     width: 50%; /* Ancho */
     box-sizing: border-box;
 }
-
 /* Estilos para la barra de navegación */
 nav {
     display: flex;
@@ -31,7 +37,6 @@ nav {
     box-sizing: border-box;
     
 }
-
 /* Estilos para el contenido principal */
 main {
     border: solid; /* Borde sólido */  
@@ -88,7 +93,7 @@ aside{
 
 .primerCarrusel img {
     width: 90%; /*Ancho del 100% del contenedor*/
-    height:16rem; /* Altura automática */
+    height:20rem; /* Altura automática */
     display: flex; /* Mostrar como bloque */
     overflow: hidden;
     flex-shrink: 0;
@@ -99,9 +104,7 @@ aside{
     content: none;
     cursor: pointer;
     border-radius: 5px;
-   
-
-    
+    object-fit: cover;   
 }
 .carrusel-buttons {
     position:  relative;
@@ -125,23 +128,26 @@ aside{
 .mainMedio {
     height: 300px;
     width: 100%;
-    background-color: antiquewhite;
+    background-color: rgba(208, 220, 255, 0.873);
     display: flex;
     flex-direction: column; /* Organiza los hijos en columna */
     align-items: center; /* Centra los elementos horizontalmente */
     box-sizing: border-box;
 }
-
 .medio, .bajo {
     width: 80%; /* Ancho del 80% para dar espacio en los lados */
     height: 100%; /* Altura del 40% */
     padding: 1%; /* Espaciado interno */
     box-sizing: border-box;
+    border-radius: 10px;
+    background-color: rgba(49, 55, 168, 0.557);
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 1.5);
 }
-
-
 /* Estilos para los elementos dentro de la barra de navegación */
 /* Contenedor principal para manejar el flexbox */
+.medio, .bajo li{
+    font-size: 15px;
+}
 .verde {
     display: flex;
     flex-wrap: wrap;
@@ -151,15 +157,12 @@ aside{
 /* Estilos para los elementos medio1, medio2 y medio3 */
 /* Estilos para los elementos de la barra */
 .medio1, .medio2, .medio3, .medio5 {
-    display: inline-flex; /* Mostrar como inline-flex */
-    background-color: rgba(132, 132, 138, 0.276); /* Color de fondo */
-    width: 20%; /* Ancho del 20% */
-    border: solid; /* Borde sólido */
-    border: hidden;
+    display: flex; /* Mostrar como inline-flex */
+    background-color: rgba(168, 168, 204, 0.887); /* Color de fondo */
+    width: 15%; /* Ancho del 20% */
     border-radius: 4px;
     height: 40px;
-    margin: 1px; /* Margen */
-    padding: 1px;
+    padding: 1% ;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -168,14 +171,15 @@ aside{
     
     
 }
-.medio1 h3, .medio2 h3, .medio3 h3{
-    color: rgb(235, 235, 241);
+.medio1 h3, .medio2 h3, .medio3 h3,.medio5 h3{
+    color: rgba(217, 217, 227, 0.906);
+    
     
 
 }
 /* Media query para pantallas pequeñas */
 @media (max-width: 768px) {
-    .medio1, .medio2, .medio3,.medio4  {
+    .medio1, .medio2, .medio3,.medio4,.medio5  {
         width: 100%; /* Ancho completo */
         margin: 5px 0; /* Márgenes verticales */
     }
@@ -184,11 +188,9 @@ aside{
 .medio4 {
     display: flex; /* Mostrar como inline-flex */
     justify-content: center; /* Justificar al centro */
-    /*width: 50%; /* Ancho del 35% */
     height: 2%; /* Altura del 2% */
     padding: 5px; /* Espaciado interno */
     max-width: 100%; /* Ancho máximo */
-    /*box-shadow: 0 2px 0px rgba(0, 0, 1, 40); /* Sombra */
     margin: 1px; /* Margen */
     border-radius: 5px; /* Radio de borde */
     background-color: rgba(130, 130, 145, 0.145); /* Color de fondo */
@@ -217,7 +219,7 @@ aside{
 .medio4contacto i {
     margin-right: 8px; /* Espacio entre el ícono y el texto */
     font-size: 1.5em; /* Tamaño del ícono */
-    color: rgba(49, 41, 209, 0.427); /* Color del ícono */
+    color: rgba(216, 215, 242, 0.427); /* Color del ícono */
 }
 
 
@@ -278,7 +280,7 @@ aside{
 /* Eliminar padding y asegurar que la imagen ocupe todo el espacio */
 .segundomain img {
     width: 100%;
-    height: 100%;
+    height: 400px;
     border-radius: 5px;
     object-fit: cover; /* Asegura que la imagen cubra el contenedor */
 }
@@ -300,12 +302,12 @@ aside{
 .image-container .caption {
     position: absolute;
     bottom: 40%; /* Ajusta según sea necesario */
-    left: 20px; /* Ajusta según sea necesario */
+    left: auto; /* Ajusta según sea necesario */
     color: rgba(249, 249, 249, 0.935); /* Color del texto */
     text-shadow: 0 6px 6px rgba(0, 0, 0, 1.5); /* Sombra de texto */
     padding: 10px;
     border-radius: 5px;
-    font-size: 40px; /* Tamaño de fuente */
+    font-size: 30px; /* Tamaño de fuente */
 }
 /* Media query para pantallas más pequeñas */
 @media (max-width: 768px) {
@@ -331,7 +333,20 @@ aside{
         padding: 5px;
     }
 }
+/* Ajustes específicos para pantallas pequeñas */
+@media (max-width: 480px) {
+    .bajo ul,
+    .bajo li {
+        margin: 5px 0; /* Ajusta el margen */
+        padding: 0 10px; /* Espaciado interno para asegurar que se ajuste al contenedor */
+    }
 
+    .bajo {
+        width: 100%; /* Asegura que ocupe todo el ancho disponible */
+        height: auto; /* Ajusta la altura automáticamente */
+        overflow: auto; /* Asegura que el contenido adicional sea desplazable */
+    }
+}
 
 /* Estilos para el formulario */
 .form {
@@ -342,8 +357,70 @@ aside{
     height: auto; /* Altura automática */
     background-color: rgba(230, 242, 242, 0.8); /* Color de fondo */
 }
+* Estilos para el footer */
+footer {
+    background-color: #333;
+    color: #030303;
+    padding: 20px 0;
+    text-align: center;
+}
 
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px;
+    min-width: 200px;
+}
+
+.footer-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.footer-section p,
+.footer-section ul,
+.footer-section li {
+    margin: 5px 0;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li a {
+    color: #0a0a0a;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #ff0;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    border-top: 1px solid #444;
+    padding-top: 10px;
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: left;
+    }
+}
 .oferta{
+    
     display: flex;
     justify-content: center;
     padding: 10px;
@@ -351,4 +428,5 @@ aside{
     bottom: 40%; /* Ajusta según sea necesario */
     left: 20px;
     box-sizing: border-box
+    
 }

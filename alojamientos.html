@@ -1,35 +1,150 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href=".//css/stilo.css">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="icon" type="image/x-icon" href="/imagenes/airplane_14718.ico">
+    
+    <title>Alojamientos</title>
+    
     <a href="index.html">
         <div class="medio4contacto"><h2><i class="fas fa-plane"></i>TurismoViaje</h2></div>
     </a>
-    <title>TurismoViaje</title>
 </head>
-<body>
-    <nav class="barra">
-        <div class="verde">
-            <div class="medio1"><a href="vuelos.html"><h3>Vuelos</h3></a></div>
-            <div class="medio2"><a href="alojamientos.html"><h3>Alojamientos</h3></a></div>
-            <div class="medio3"><a href="ofertas.html"><h3>Ofertas</h3></a></div>
-            <div class="medio5"><a href="contacto.html"><h3>Contacto</h3></a></div>
-        </div>
 
-        <div class="oferta">
-            <a href="https://www.marriott.com/en-us/hotels/buesc-sheraton-buenos-aires-hotel-and-convention-center/overview/?scid=f2ae0541-1279-4f24-b197-a979c79310b0">     
-                <img src="imagenes\Sheraton1.jpg" width="70%" height="300px" alt="Sheraton">
-            </a> 
-            <a href="https://www.hotelescenter.es/es/hotel-valencia-center/">
-                <img src="imagenes\images (1).jpeg" width="90%" height="300px" alt="Valencia">
-            </a>
-            <a href="https://the1888hotel.com/">
-                <img src="imagenes\L_5b14ea06ea19a_Hotel_1888_Instagram.jpg" width="90%" height="300px" alt="1888">
-            </a>
-        </div>       
+
+    <header>
+        <h1>Alojamientos</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="alojamientos.html">Alojamientos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="vuelos.html">Vuelos</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="alojamientos">
+            <h2>Lista de Alojamientos</h2>
+            <div class="alojamiento">
+                <img src="/imagenes/alojamientos1.jpg" alt="Alojamiento 1">
+                <h3>Alojamiento 1</h3>
+                <p>Islas  Santa Barbara  $300usd.</p>
+            </div>
+            <div class="alojamiento">
+                <img src="/imagenes/alojamientos2.jpg" alt="Alojamiento 2">
+                <h3>Alojamiento 2</h3>
+                <p> Punta del Este $150usd.</p>
+            </div>        
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Alojamientos. Todos los derechos reservados.</p>
+    </footer>
+    <body>
+        <style>
+            /*PESTAÑA ALOJAMIENTOS*/
+    /* Estilos generales */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+    }
+    
+    header {
+        background-color: rgba(49, 41, 209, 0.427);
+        color: #fff;
+        padding: 1rem 0;
+        text-align: center;
+    }
+    
+    nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        background-color: rgba(89, 82, 220, 0.471);
+        
+        text-align: center;
+    }
+    
+    nav ul li {
+        display: inline;
+    }
+    
+    nav ul li a {
+        color: #fff;
+        padding: 1rem;
+        display: inline-block;
+        text-decoration: none;
+    }
+    
+    nav ul li a:hover {
+        background-color: #555;
+    }
+    
+    main {
+        padding: 1rem;
+    }
+    
+    section#alojamientos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+    .alojamiento {
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        margin: 1rem;
+        padding: 1rem;
+        width: calc(33% - 2rem);
+        box-sizing: border-box;
+        text-align: center;
+    }
+    .medio4 i {
+    margin-right: 8px;
+    font-size: 1.5em;
+    color: rgba(49, 41, 209, 0.427);
+    }
+    
+    .alojamiento img {
+        max-width: 100%;
+        border-radius: 5px;
+    }
+    .mediocontacto4 {
+    display: flex; /* Mostrar como inline-flex */
+    justify-content: center; /* Justificar al centro */
+    height: 2%; /* Altura del 2% */
+    padding: 5px; /* Espaciado interno */
+    max-width: 100%; /* Ancho máximo */
+    margin: 1px; /* Margen */
+    border-radius: 5px; /* Radio de borde */
+    background-color: rgba(130, 130, 145, 0.145); /* Color de fondo */
+    }
+    
+    
+    /* Media query para pantallas más pequeñas */
+    @media (max-width: 768px) {
+        .alojamiento {
+            width: calc(50% - 2rem);
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .alojamiento {
+            width: calc(100% - 2rem);
+        }
+    }
+    
+    
+    
+    
+        </style>
 </body>
 </html>
